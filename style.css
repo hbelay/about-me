@@ -13,7 +13,7 @@ h1 {
   padding: 10px 0px 10px 50px;
 }
 h2 {
-  background-color:#66aaff;
+
   height: 50px;
 	width: 900px;
 	border-radius: 5px;
@@ -22,5 +22,8 @@ h2 {
 #footer p {
 	position: relative;
 	padding-left: 75px;
+
+}
+a { text-decoration: none
 
 }

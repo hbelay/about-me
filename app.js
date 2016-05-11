@@ -8,7 +8,6 @@ if(response1 === 'yes' || response1 === 'y'){
 }else {
   alert('Nope! ' + userName + ' . You don\'t get this right');
 }
-
 var response2 = prompt('Have I been in New York? ').toLowerCase();
 if(response2 === 'no' || response2 === 'n'){
   alert('Your response is ' + response2 + ', and you are correct, ' + userName + ' ! I have not been in New York');
