@@ -1,6 +1,26 @@
 * {
+  border: 5px;
   color: black;
 }
 body {
-  background-color: #009900;
+  padding-left: 50px;
+  background-color: #009933;
+}
+h1 {
+  background-color:#0033cc;
+  height: 60px;
+	width: 900px;
+  padding: 10px 0px 10px 50px;
+}
+h2 {
+  background-color:#66aaff;
+  height: 50px;
+	width: 900px;
+	border-radius: 5px;
+  padding: 5px 0px 5px 20px ;
+}
+#footer p {
+	position: relative;
+	padding-left: 75px;
+
 }
