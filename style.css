@@ -1,29 +1,28 @@
 * {
+
   border: 5px;
   color: black;
+ }
+a {
+  text-decoration: none;
 }
 body {
+  background-color:#eedcad
   padding-left: 50px;
-  background-color: #009933;
 }
+
 h1 {
-  background-color:#0033cc;
-  height: 60px;
+
+  height:60px;
 	width: 900px;
   padding: 10px 0px 10px 50px;
 }
 h2 {
-
   height: 50px;
 	width: 900px;
 	border-radius: 5px;
-  padding: 5px 0px 5px 20px ;
+  padding: 5px ;
 }
-#footer p {
+#footer {
 	position: relative;
-	padding-left: 75px;
-
-}
-a { text-decoration: none
-
-}
+	padding-left: 15px;
