@@ -1,52 +1,31 @@
-// Global variable.
-var answer1 = 'yes';
-var answer2 = 'no';
+//Global variable.
 var score = 0;
 var userName = prompt('Hi there, thanks for visiting About Me page? What is your name? ').toUpperCase();
 alert('Nice to meet you ' + userName + '. I\'m going to ask you 7 questions about me. Make your best guesses.  Please give answer accordingly ');
 console.log('The user \'s name is ' + userName + ' and he is guessing my questions');
 
-// #1
-var response1 = prompt('Do I live in Seattle?').toLowerCase();
-if(response1 === answer1 || response1 === answer1[0]){
-  alert('Your response is ' + response1 + '! You are correct, ' + userName + ' ! I live in Seattle, WA.');
-  score++;
-}else {
-  alert('Nope! ' + userName + ' . You don\'t get this right');
+var questions = ['Do I live in Seattle?', 'Have I been in New York?', 'Am I a good singer?',
+                'Do I have siblings?', 'Do I like talking to friends on facebook?'];
+var answers = ['yes', 'no', 'no', 'yes', 'no'];
+var responses = ['I live in Seattle, WA.', 'I have not been in New York', 'I\'m not a good singer',
+                'I have 5 Siblings', 'No, I don\'t like Facebook'];
+
+function noYes() {
+  for (i = 0; i < 5; i++) {
+    var ques = prompt(questions[i]).toLowerCase();
+    console.log(ques, answers[i], answers[i][0]);
+    if (ques === answers[i] || ques === answers[i][0]){
+      alert(responses[i]);
+      score++;
+    } else {
+      alert('Nope, that is not correct. The correct answer is ' + responses[i]);
+    }
+  }
 }
-// #2
-var response2 = prompt('Have I been in New York? ').toLowerCase();
-if (response2 === answer2 || response2 === answer2[0]) {
-  alert('Your response is ' + response2 + ', and you are correct, ' + userName + ' ! I have not been in New York');
-  score++;
-} else {
-  alert('Nope! ' + userName + ',  you don\'t get this right');
-}
-// #3
-var response3 = prompt('Am I a good singer? ').toLowerCase() ;
-if(response3 === answer2 || response3 === answer2[0]) {
-  alert('Your response is ' + response3 + ' you are correct ' + userName + '! I\'m not');
-  score++;
-}else {
-  alert('Nope!' + userName + ', you don\'t get this right');
-}
-// #4
-var response4 = prompt('Do I have siblings? ').toLowerCase();
-if(response4 === answer1 || response4 === answer1[0]) {
-  alert('Your response is ' + response4 + ' you are correct ' + userName + ',  I have 5 Siblings');
-  score++;
-} else {
-  alert('Nope! ' + userName + ', you don\'t get this right');
-}
-// #5
-var response5 = prompt('Do I like talking to friends on facebook? ').toLowerCase() ;
-if(response5 === answer1 || response5 === answer1[0]) {
-  alert('Your response is ' + response5 + ', you are correct ' + userName + '! I don\'t like Facebook');
-  score++;
-}else {
-  alert('Nope! ' + userName + ', you don\'t get this right');
-}
-// #6
+
+noYes();
+
+//#6
 var number = 25;
 for(var i = 0; i < 4; i++){
   console.log(number);
@@ -61,9 +40,9 @@ for(var i = 0; i < 4; i++){
     alert('Hi, it is too low. Try again ');
   }
 }
+
 // # 7
 var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
-//var response7 = prompt('Gess the cities I have visited? ').toupperCase();
 for(var i = 0; i < 6; i++){
   var response7 = prompt('Gess the cities I have visited? ').toUpperCase();
   for(var j = 0; j < array.length; j++){
@@ -77,11 +56,11 @@ for(var i = 0; i < 6; i++){
   }
   if (correctAnswer) {
     break;
+    alert('Try again!');
   }
-  alert('Try again!');
 }
 if(score > 5){
   alert('You answered ' + score + ' out of 7 questions correctly ' + userName + ', Well Done! Thak you and see you next time.');
-}else {
+} else {
   alert('You answered ' + score + ' out of 7 questions correctly ' + userName + ', Thak you and see you next time.');
 }
