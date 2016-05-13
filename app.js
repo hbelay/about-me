@@ -38,14 +38,14 @@ if(response4 === answer1 || response4 === answer1[0]) {
   alert('Nope! ' + userName + ', you don\'t get this right');
 }
 // #5
-var response5 = prompt('Do I like talking to friends on facebook? ').toLowerCase() ;
-if(response5 === answer1 || response5 === answer1[0]) {
-  alert('Your response is ' + response5 + ', you are correct ' + userName + '! I don\'t like Facebook');
-  score++;
-}else {
-  alert('Nope! ' + userName + ', you don\'t get this right');
-}
-// #6
+// var response5 = prompt('Do I like talking to friends on facebook? ').toLowerCase() ;
+// if(response5 === answer1 || response5 === answer1[0]) {
+//   alert('Your response is ' + response5 + ', you are correct ' + userName + '! I don\'t like Facebook');
+//   score++;
+// }else {
+//   alert('Nope! ' + userName + ', you don\'t get this right');
+// }
+// // #6
 var number = 25;
 for(var i = 0; i < 4; i++){
   console.log(number);
@@ -63,25 +63,25 @@ for(var i = 0; i < 4; i++){
   }
 }
 // # 7
-var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
-for(var i = 0; i < 6; i++){
-  var response7 = prompt('Gess the cities I have visited? ').toUpperCase();
-  for(var j = 0; j < array.length; j++){
-    console.log(array);
-    if (array[j] === response7) {
-      alert('Great, you get it!');
-      score++;
-      var correctAnswer = true;
-      break;
-    }
-  }
-  if (correctAnswer) {
-    break;
-  }
-  alert('Try again!');
-}
-if(score > 5){
-  alert('You answered ' + score + ' out of 7 questions correctly ' + userName + ', Well Done! Thak you and see you next time.');
-}else {
-  alert('You answered ' + score + ' out of 7 questions correctly ' + userName + ', Thak you and see you next time.');
-}
+// var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
+// for(var i = 0; i < 6; i++){
+//   var response7 = prompt('Gess the cities I have visited? ').toUpperCase();
+//   for(var j = 0; j < array.length; j++){
+//     console.log(array);
+//     if (array[j] === response7) {
+//       alert('Great, you get it!');
+//       score++;
+//       var correctAnswer = true;
+//       break;
+//     }
+//   }
+//   if (correctAnswer) {
+//     break;
+//   }
+//   alert('Try again!');
+// }
+// if(score > 5){
+//   alert('You answered ' + score + ' out of 7 questions correctly ' + userName + ', Well Done! Thak you and see you next time.');
+// }else {
+//   alert('You answered ' + score + ' out of 7 questions correctly ' + userName + ', Thak you and see you next time.');
+// }
