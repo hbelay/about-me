@@ -1,18 +1,14 @@
-* {
 
-  border: 5px;
-  color: black;
- }
 a {
   text-decoration: none;
 }
 body {
-  background-color:#eedcad
+  background-color:#00aaad;
+  margin: 0px auto;
+  border: 5px;
   padding-left: 50px;
-}
-
-h1 {
-
+  }
+h1 {position: relative;
   height:60px;
 	width: 900px;
   padding: 10px 0px 10px 50px;

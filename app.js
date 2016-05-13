@@ -2,11 +2,12 @@
 var answer1 = 'yes';
 var answer2 = 'no';
 var score = 0;
-var userName = prompt('Hi there, thanks for visiting About Me page? What is your name? ').toUpperCase();
-alert('Nice to meet you ' + userName + '. I\'m going to ask you 7 questions about me. Make your best guesses.  Please give answer accordingly ');
-console.log('The user \'s name is ' + userName + ' and he is guessing my questions');
-
-// #1
+function intro(){
+  var userName = prompt('Hi there, thanks for visiting About Me page? What is your name? ').toUpperCase();
+  alert('Nice to meet you ' + userName + '. I\'m going to ask you 7 questions about me. Make your best guesses.  Please give answer accordingly ');
+  console.log('The user \'s name is ' + userName + ' and he is guessing my questions');
+}
+intro();
 var response1 = prompt('Do I live in Seattle?').toLowerCase();
 if(response1 === answer1 || response1 === answer1[0]){
   alert('Your response is ' + response1 + '! You are correct, ' + userName + ' ! I live in Seattle, WA.');
@@ -63,7 +64,6 @@ for(var i = 0; i < 4; i++){
 }
 // # 7
 var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
-//var response7 = prompt('Gess the cities I have visited? ').toupperCase();
 for(var i = 0; i < 6; i++){
   var response7 = prompt('Gess the cities I have visited? ').toUpperCase();
   for(var j = 0; j < array.length; j++){
