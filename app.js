@@ -6,7 +6,6 @@ var userName = prompt('Hi there, thanks for visiting About Me page? What is your
 alert('Nice to meet you ' + userName + '. I\'m going to ask you 7 questions about me. Make your best guesses.  Please give answer accordingly ');
 console.log('The user \'s name is ' + userName + ' and he is guessing my questions');
 
-// #1
 var response1 = prompt('Do I live in Seattle?').toLowerCase();
 if(response1 === answer1 || response1 === answer1[0]){
   alert('Your response is ' + response1 + '! You are correct, ' + userName + ' ! I live in Seattle, WA.');
@@ -56,14 +55,15 @@ for(var i = 0; i < 4; i++){
     score++;
     break;
   } else if(number < response6){
-    alert('Hi, it is too high. Try again? ');
+    alert('Hi, it is too high. Please try again? ');
+  }else if(number > response6){
+    alert('Hi, this is low. Please try again ');
   }else {
-    alert('Hi, it is too low. Try again ');
+    alert('This is not a number');
   }
 }
 // # 7
 var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
-//var response7 = prompt('Gess the cities I have visited? ').toupperCase();
 for(var i = 0; i < 6; i++){
   var response7 = prompt('Gess the cities I have visited? ').toUpperCase();
   for(var j = 0; j < array.length; j++){
