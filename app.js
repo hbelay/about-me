@@ -40,6 +40,7 @@ for(var i = 0; i < 4; i++){
     alert('This is not a number, and you have ' + (4 - i) + ' Please try again? ');
   }
 }
+
 //# 7
 var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
 for(var i = 0; i < 6; i++){
