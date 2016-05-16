@@ -1,3 +1,4 @@
+
 var score = 0;
 var userName = prompt('Hi there, thanks for visiting About Me page? What is your name? ').toUpperCase();
 alert('Nice to meet you ' + userName + '. I\'m going to ask you 7 questions about me. Make your best guesses.  Please give answer accordingly ');
@@ -40,7 +41,6 @@ for(var i = 0; i < 4; i++){
     alert('This is not a number, and you have ' + (4 - i) + ' Please try again? ');
   }
 }
-
 //# 7
 var array = ['LOS ANGLES', 'LONDON', 'NEW YORK', 'CHICOGO', 'BOSTON', 'SEATTLE','PARIS', 'DUBAI'];
 for(var i = 0; i < 6; i++){

@@ -4,6 +4,13 @@
           box-sizing: border-box;
           background-color: #d4d0c6;
 		}
+
+#page-wrap {
+     	width: 100%;
+     	margin: 10px auto;
+
+		}
+
 body 	{
 		color: #665544;
 		background-image: url("images/backdrop.gif");
@@ -15,13 +22,6 @@ body 	{
 		 margin: 0 auto;
 
 		 }
-
-#page-wrap {
-     	width: 100%;
-     	margin: 10px auto;
-
-		}
-
  h1 	{
 		 text-shadow: 2px 2px 8px #FF0000;
 		width: 100%;
