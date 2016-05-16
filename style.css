@@ -1,9 +1,13 @@
-
 * {
   	  -webkit-box-sizing: border-box;
      	-moz-box-sizing: border-box;
           box-sizing: border-box;
           background-color: #d4d0c6;
+		}
+
+#page-wrap {
+     	width: 100%;
+     	margin: 10px auto;
 		}
 
 body 	{
@@ -17,12 +21,6 @@ body 	{
 		 margin: 0 auto;
 
 		 }
-
-#page-wrap {
-     	width: 100%;
-     	margin: 10px auto;
-
-		}
 
  h1 	{
 		 text-shadow: 2px 2px 8px #FF0000;

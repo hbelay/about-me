@@ -1,4 +1,4 @@
-// Global variable.
+
 var score = 0;
 var userName = prompt('Hi there, thanks for visiting About Me page? What is your name? ').toUpperCase();
 alert('Nice to meet you ' + userName + '. I\'m going to ask you 7 questions about me. Make your best guesses.  Please give answer accordingly ');
